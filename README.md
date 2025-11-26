@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+E-Commerce Project (Next.js + NestJS + PostgreSQL)
 
-## Getting Started
+Bu layihə Next.js (Frontend) və NestJS (Backend) istifadə edilərək hazırlanmış full-stack e-commerce platformasıdır.
+Frontend TypeScript, backend isə NestJS + PostgreSQL üzərində qurulub.
 
-First, run the development server:
+ℹ️ Qeyd: Layihə sentyabr ayından etibarən development prosesində deyil və sonradan yenilənməyib. Tezliklə təkmilləşdirmə və davam etdirilməsi planlaşdırılır.
 
-```bash
+🚀 Texnologiyalar
+Frontend
+
+Next.js 14
+
+
+
+TypeScript
+
+App Router
+
+TailwindCSS
+
+next/font (Geist)
+
+Backend
+
+NestJS
+
+TypeORM
+
+PostgreSQL
+
+REST API
+
+Deployment
+
+Backend → Render.com
+
+Frontend → Vercel
+
+📦 Development üçün başlamaq
+Frontend-i işə salmaq
 npm run dev
-# or
+# veya
 yarn dev
-# or
+# veya
 pnpm dev
-# or
+# veya
 bun dev
-```
 
-Open https://coming-soon-swart-tau.vercel.app/ with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Daha sonra brauzerdə aç:
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Frontend kodları app/ folderində yerləşir.
+app/page.tsx faylını dəyişdikcə project avtomatik yenilənəcək.
 
-## Learn More
+🗄️ Backend-i işə salmaq (NestJS)
 
-To learn more about Next.js, take a look at the following resources:
+Backend folderinə keç və:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm run start:dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+Backend default olaraq 3001 portunda çalışır:
+http://localhost:3001
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Environment dəyişənləri (.env) PostgreSQL bağlantısı üçün belə olur:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+DATABASE_URL=postgresql://USER:PASSWORD@HOST:PORT/DB_NAME
+
+🌐 Canlı Demo
+
+Frontend (Vercel):
+https://coming-soon-swart-tau.vercel.app/
+
+Backend (Render):
+Render cold-start səbəbilə bir qədər gec cavab verə bilər.
+
+📘 Öyrənmək üçün resurslar
+
+Next.js Docs: https://nextjs.org/docs
+
+NestJS Docs: https://docs.nestjs.com/
+
+TypeORM Docs: https://typeorm.io/
+
+🛠️ Deploy haqqında
+
+Frontend-in deploy-u üçün Vercel istifadə olunub.
+Backend-in deploy-u üçün isə Render.com seçilib (free plan cold start səbəbi ilə bir qədər gec cavab verir).
+
+Deploy haqqında daha çox məlumat:
+
+Next.js Deploy: https://nextjs.org/docs/app/building-your-application/deploying
+
+NestJS Deploy Render: https://docs.render.com/deploy-nestjs
+
+📌 Status
+
+🟡 Development paused — Layihə sentyabr ayından bu yana yenilənmir. Gələcəkdə genişləndirilərək tam istifadəyə veriləcək.
